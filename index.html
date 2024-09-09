@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>To Do List</h4>
+        </div>
+        <ul>
+            <button class="btnConfirm" id="btnNew" type="button">New</button>
+            <!-- <li class="icon-log">😺</li>
+            <li class="icon-log">😼</li>
+            <li class="icon-log">😹</li> -->
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>     
+    </nav>
+
+    <section>
+        <div class="container">
+            <form class="form-welcome">
+                <div class="title"><p>Welcome,</p><br><span class="span">Please Input your Name and Role</span></div>
+                <input class="input" id="name" placeholder="Name" type="text">
+                <input class="input" id="role" placeholder="Role" type="text">
+                <div id="taskInput">
+                </div>
+                <select class="input-select" id="priority-select" style="display: none">
+                    <option value="" disabled selected hidden>Choose Priority</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button class="btnConfirm" id="btnWelcome" type="button">Let's Go</button>
+                <div id="taskBtn">
+                </div>
+                <span class="span-todo" style="display: none">This is Your To Do List</span>
+                <span class="span-dt" id="datetime" style="display: none"></span>
+                <ol id="taskList">
+                    <!-- <li class="input-list-low">Ini Low
+                        <div class="actionList">
+                            <button class="btnConfirm-list" type="button">Done</button>
+                            <button class="btnConfirm-list" type="button">Remove Task</button>
+                        </div>
+                    </li>
+                    <li class="input-list-medium">Ini Medium
+                        <div class="actionList">
+                            <button class="btnConfirm-list" type="button">Done</button>
+                            <button class="btnConfirm-list" type="button">Remove Task</button>
+                        </div>
+                    </li>
+                    <li class="input-list-high">Ini High
+                        <div class="actionList">
+                            <button class="btnConfirm-list" type="button">Done</button>
+                            <button class="btnConfirm-list" type="button">Remove Task</button>
+                        </div>
+                    </li> -->
+              </form>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
