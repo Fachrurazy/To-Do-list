@@ -10,7 +10,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+  position:relative;
+  overflow-x:hidden;
+}
 body {
     background-color: #e8e8e8;
     font-family: Poppins;
@@ -287,9 +290,9 @@ section .container {
     z-index: 1;
   }
   
-  .input-select:focus {
+  /* .input-select:focus {
     border: 2px solid var(--input-focus);
-  } 
+  }  */
 
   /* List Priority */
   .input-list-low {

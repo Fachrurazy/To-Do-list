@@ -83,11 +83,14 @@ getBtnTask?.addEventListener('click',()=>{
 
     const getLi = document.getElementById('spanLitext');
     innerListitem.querySelector('#btnDone').addEventListener('click', () => {
-        if (getLi.style.textDecoration === 'line-through') {
-            getLi.style.textDecoration = 'none';
+        if (innerListitem.style.textDecoration === 'line-through') {
+            innerListitem.style.textDecoration = 'none';
+            return
         } else {
-            getLi.style.textDecoration = 'line-through';
+            innerListitem.style.textDecoration = 'line-through';
+            return
         }
+        
     });
 
     innerListitem.querySelector('#btnRemove').addEventListener('click', () => {
