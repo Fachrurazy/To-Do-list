@@ -132,7 +132,7 @@ nav ul li {
         align-items: center;
         background-color: white;
         z-index: 2;
-        /* transform: translateX(100%); */
+        transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
     }
