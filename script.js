@@ -13,15 +13,17 @@ const getTaskinput = document.getElementById('taskInput');
 const getTaskbtn = document.getElementById('taskBtn');
 const getTasklist = document.getElementById('taskList');
 
-
+// Handle Menu Toggle
 getToggle.addEventListener('click',()=>{
     getUl.classList.toggle('slide');
 });
 
+// Handle Button New
 getBtnNew.addEventListener('click',()=>{
     location.reload();
 });
 
+// Handle Button Welcome to direct form Task todo list
 getBtnWelcome.addEventListener('click', () =>{
     const nameText = getName.value.trim();
     const roleText = getRole.value.trim();
@@ -57,7 +59,8 @@ getBtnWelcome.addEventListener('click', () =>{
 
     const getTasktext = document.getElementById('task');
     const getBtnTask = document.getElementById('btnTask');
-    
+
+    // Handle to create Task List 
 getBtnTask?.addEventListener('click',()=>{
     const taskText = getTasktext.value.trim();
     const selectText = getPrioritytext.value;
@@ -81,32 +84,23 @@ getBtnTask?.addEventListener('click',()=>{
     </div>`;
     getTasklist.appendChild(innerListitem);
 
-    const getLi = document.getElementById('spanLitext');
+    // Handle to complete task list or done task list
     innerListitem.querySelector('#btnDone').addEventListener('click', () => {
-        if (innerListitem.style.textDecoration === 'line-through') {
-            innerListitem.style.textDecoration = 'none';
-            return
-        } else {
-            innerListitem.style.textDecoration = 'line-through';
-            return
+        if(innerListitem.querySelector('#spanLitext').style.textDecoration === 'line-through'){
+            innerListitem.querySelector('#spanLitext').style.textDecoration = 'none';
         }
-        
+        else{
+            innerListitem.querySelector('#spanLitext').style.textDecoration = 'line-through';
+        }
     });
 
+    // Handle to Remove task list or delete task list
     innerListitem.querySelector('#btnRemove').addEventListener('click', () => {
         innerListitem.remove();
     });
 
     getTasktext.value = '';
     getPrioritytext.value = '';
-
-    // const getinnerListitemRemove = document.getElementById('btnRemove');
-    // const getinnerListitemDone = document.getElementById('btnDone');
-
-    // getinnerListitemRemove.addEventListener('click',()=>{
-    //     innerListitem.remove();
-    // })
-
     });
 });
 

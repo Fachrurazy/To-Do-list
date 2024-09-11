@@ -49,15 +49,6 @@ nav ul li {
     color: slategrey;
 } */
 
-/* .icon-log {
-    border-radius: 100%;
-    border: 2px solid;
-    background-color: var(--bg-color);
-    box-shadow: 4px 4px;
-    color: var(--font-color);
-    font-size: 20px;
-  } */
-
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -242,14 +233,6 @@ section .container {
     color: var(--font-color);
     cursor: pointer;
   }
-
-  /* .form-welcome input:nth-child(4) {
-    position: absolute;
-    width: 294px;
-    height: 40px;
-    bottom: 136px;
-    cursor: pointer;
-  } */
   
 /* Form Task */
 
